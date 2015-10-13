@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        allow_any="False"
+        cookie_persistence="False"
+        default_skin="slab theme">
+
+    <object name="slab_images"
+            meta_type="Filesystem Directory View"
+            directory="cpskin.diazotheme.slab:skins/slab_images"/>
+
+ <skin-path name="slab theme"
+            based-on="Sunburst Theme">
+    <layer name="slab_images"
+           insert-after="custom"/>
+ </skin-path>
+
+</object>
