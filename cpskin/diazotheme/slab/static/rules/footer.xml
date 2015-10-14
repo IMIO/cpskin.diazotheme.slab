@@ -28,7 +28,7 @@
           </div>
       </replace>
       
-      <drop css:content="#portal-siteactions #portal-personaltools-wrapper" />
+      <!--drop css:content="#top-actions-actions" /-->
       
   </rules>
 
