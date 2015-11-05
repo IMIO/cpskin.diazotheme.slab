@@ -1,8 +1,5 @@
 #visual-portal-wrapper {
-    background-image: url("../../images-header/header.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    height: 490px;
+    background: url("../../images-header/header.jpg") no-repeat center top #f6f6f6;
 }
 
 .section-theme1 #visual-portal-wrapper {
@@ -234,7 +231,7 @@ margin: 0;
 
 #portal-header ul.navTreeLevel0,.section-notheme #portal-header .sf-menu ul.navTreeLevel1,
 #portal-header .sf-menu ul.navTreeLevel1 {
-    background-color: #f2f2f2;
+    background-color: rgba(242, 242, 242, 0.2);
     border-top: 6px solid #317D9B;
     max-width: 100%;
 }
@@ -244,7 +241,6 @@ margin: 0;
 }
 
 .section-notheme #portal-header ul.navTreeLevel0 {
-    box-shadow: 0 4px 4px #6b6b6b;
     position: absolute;
     width: 100%;
     max-width:1230px;
@@ -262,6 +258,19 @@ margin: 0;
 	color:#ffffff;
 }
 
+/*======= sous menu =========*/
+
+.portal-globalnav-cpskinmenu a:hover, .portal-globalnav-cpskinmenu-tabs a:hover {
+    background-color: #fcfcfc;
+    border-radius: 0;
+}
+
+ul.navTreeLevel0 li a {
+    background-color: #ffffff;
+}
+
+/*======= fin sous menu =========*/
+
 /* --- Fin navigation --- */
 
 /* --- Faceted navigation --- */
@@ -278,6 +287,10 @@ margin: 0;
 
 #social-viewlet, #portal-personaltools-wrapper, #portal-siteactions {
     float: left;
+}
+
+#social-viewlet{
+	padding-left:0.5em;
 }
 
 #content #viewlet-above-content-title ul li {
@@ -310,6 +323,9 @@ margin: 0;
 
 /* >>> CONTENT <<< */
 
+#content {
+    margin: 0;
+}
 
 #content a:hover {
     color: #3a3a3a !important;
@@ -318,7 +334,7 @@ margin: 0;
 #portal-columns {
     background-color: white;
     max-width: 1200px;
-    padding: 15px;
+    padding: 1% 15px 1% 0;
 }
 
 #portal-column-content #portal-breadcrumbs {
@@ -326,17 +342,17 @@ margin: 0;
 }
    
 .titre-rss{
-    background-color:white;
+    background-color:transparent;
     margin-top:0;
 }
 
 .titre-rss h2,.bloc-rss:after {
-    color: #475055;
+    color: #0092ff;
 }
 
 .results{
-    background-color: white;
-    border-top: 1px solid #dde2e4;
+    background-color: transparent;
+    border-top: none;
     padding-top: 1em ;
 }
 
@@ -352,11 +368,36 @@ margin: 0;
     color:#747f84 !important;
 }
 
+/* --- Bloc news et event ---- */
+
+.bloc-item {
+    background-color: white;
+    border-radius:4px;
+    padding:1%;
+    width: 47.6%;
+}
+
+#content .bloc-item{
+	margin-bottom: 1em;
+}
+
+.bloc-item:nth-child(odd){
+    margin-right: 1em;
+}
+
+.bloc-item:nth-child(even){
+    /*margin-left: 1em;*/
+}
+
+/* --- Fin bloc news et event ---- */
+
 /* --- Viewlet multimédia --- */
 
 #multimediaviewlet {
     background-color: #ffffff;
+    border-radius: 4px;
     margin: 2em 3px 1em;
+    padding-left: 1%;
 }
 
 .section-notheme #multimediaviewlet h2 {
@@ -383,12 +424,7 @@ margin: 0;
 .template-folderview.section-notheme #portal-columns { 	 	
 	background-color: transparent; 	 	
 } 	 	
-		 			 	
-.template-folderview.section-notheme div.width-3\:4 { 	 	
-	background-color: #ffffff; 	 	
-	margin-left: -100.9%; 	 	
-	padding: 0.5%; 	 	
-} 	 	
+	 	
 		 	
 .template-folderview.section-notheme div.position-3\:4 { 	 	
 	background-color: transparent; 	 	
@@ -406,6 +442,18 @@ margin: 0;
 /* --- Fin flexslider --- */
 
 /* --- Portlet généraux --- */
+
+.template-folderview div.width-1\:4 {
+    width: 27.75%;
+}
+
+.template-folderview.section-notheme div.position-3\:4 {
+    margin-left: -11.8%;
+}
+
+#portal-column-two div {
+    padding: 0 0.5em 0.5em;
+}
 
 #portal-columns dl.portlet {
 	border-bottom: medium none;	
@@ -433,7 +481,7 @@ dl.portlet dt, .portletWrapper dl.portlet a, .portletFooter,.portletFooter a{
 
 #portal-column-two aside > div:first-child dl.portlet .portletHeader,
 #portal-column-two aside > div:nth-child(2) dl.portlet .portletHeader{
-	color:#ffffff;
+	color:#000000;
 	padding-top: 1em;
 }
 
@@ -443,7 +491,7 @@ dl.portlet dt, .portletWrapper dl.portlet a, .portletFooter,.portletFooter a{
 #portal-column-two aside > div:nth-child(2) dl.portlet dd a,
 #portal-column-two aside > div:first-child a,
 #portal-column-two aside > div:nth-child(2) a{
-	color:white;
+	color:#000000;
 	
 }
 
@@ -451,24 +499,24 @@ dl.portlet dt, .portletWrapper dl.portlet a, .portletFooter,.portletFooter a{
 #portal-column-two aside > div:nth-child(2) dl.portlet dd a:hover,
 #portal-column-two aside > div:first-child a:hover,
 #portal-column-two aside > div:nth-child(2) a:hover{
-	color:white !important;
+	color:#000000 !important;
 	text-decoration:underline;
 }
 
 #portal-column-two aside > div:first-child dl.portlet .portletHeader a{
-	background-color:#7A9FA8;
-	color:#ffffff;
+	background-color:#ffffff;
+	color:000000;
 }
 
 #portal-column-two aside > div:first-child dl.portlet .portletHeader a:hover{
-    color:#ffffff !important;
+    color:#000000 !important;
 	text-decoration:underline;
 }
 
 #portal-column-two aside > div:first-child,
 #portal-column-two aside > div:first-child dl.portlet dt {
-    background-color: #7A9FA8;
-    color: white;    
+    background-color: #ffffff;
+    color: #000000;    
 }
 
 
@@ -480,8 +528,8 @@ dl.portlet dt, .portletWrapper dl.portlet a, .portletFooter,.portletFooter a{
 
 #portal-column-two aside > div:nth-child(2),
 #portal-column-two aside > div:nth-child(2) dl.portlet dt{
-    background-color: #be5045;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     margin-bottom:1em;  
 }
 
@@ -648,7 +696,7 @@ dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
     float: left;
     margin: 0;
     padding: 0 1em;
-    width: 74%;
+    width: 50%;
 }
 
 #portal-footer a {
@@ -657,11 +705,17 @@ dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
 
 #portal-footer p {
     color: #1b1b1b;
+    text-align: inherit;
 }
 
 #portal-footer-action {
     float: left;
-    width: 23%;
+    margin-left:3%;
+    width: 30%;
+}
+
+#portal-footer-action #portal-personaltools {
+    margin-right: 0.5em;
 }
 
 #footer-sitemap a {
@@ -697,7 +751,7 @@ dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
     float: left;
     margin-left:0;
     margin-right:0.25em;
-    padding: 1em;
+    padding: 0 1em 1em;
 }
 
 #footer-static-social .social {
@@ -707,4 +761,14 @@ dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
 #footer-sitemap div.footer-static h2 {
     color: #1b1b1b;
 }
+
+#footer-sitemap div.footer-static img{
+	border:none;
+}
+
+#portal-footer-action #portal-personaltools dd {
+    margin-right: -7em;
+    padding-top: 1em;
+}
+
 /* >>> FIN FOOTER <<< */
