@@ -435,9 +435,17 @@ ul.navTreeLevel0 li a {
 
 /* --- Flexslider --- */
 
+/*
+Those rules (#slider & #carousel) should change when #16991 is in production
+Begin
+*/
 #flex #carousel ul li {
     background-color: #302a23;
 }
+#flex #carousel-a-la-une ul li {
+    background-color: #302a23;
+}
+/* End */
 
 /* --- Fin flexslider --- */
 
