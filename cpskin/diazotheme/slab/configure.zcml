@@ -18,7 +18,7 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
-    <!-- CPSkin theme -->
+    <!-- Theme -->
     <plone:static directory="static" name="cpskin.diazotheme.slab" type="theme" />
 
     <cmf:registerDirectory
